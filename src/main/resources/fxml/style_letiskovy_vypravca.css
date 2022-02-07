@@ -1,0 +1,4 @@
+#pozadie {
+    -fx-background-image: url('svetle_pozadie.png');
+    -fx-background-size: 100% 100%;
+}

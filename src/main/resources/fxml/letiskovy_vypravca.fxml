@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pozadie" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" stylesheets="@style_letiskovy_vypravca.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.worwafi.ControllerLetiskovyVypravca">
+   <children>
+      <Canvas fx:id="mapa" height="1000.0" layoutY="-25.0" width="1000.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Canvas>
+      <JFXButton fx:id="buttonKreslenie" layoutX="826.0" layoutY="14.0" prefHeight="63.0" prefWidth="166.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text="Pome na to">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font></JFXButton>
+      <JFXTextArea focusColor="#eeeeee" layoutX="517.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="63.0" prefWidth="305.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text="Kam by si chcel letieť? " unFocusColor="#003049">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="textfieldPociatok" alignment="CENTER_RIGHT" layoutX="517.0" layoutY="90.0" prefHeight="50.0" prefWidth="475.0" promptText="Počiatočné letisko " style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="textfieldKoniec" alignment="CENTER_RIGHT" layoutX="517.0" layoutY="155.0" prefHeight="50.0" prefWidth="475.0" promptText="Cieľové letisko " style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="textAreaVypis" editable="false" layoutX="528.0" layoutY="217.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="296.0" prefWidth="464.0" style="-fx-text-fill: #f77f00;" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="buttonSpat" layoutX="14.0" layoutY="923.0" prefHeight="63.0" prefWidth="166.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text="Späť">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </JFXButton>
+      <VBox layoutX="20.0" layoutY="820.0">
+         <children>
+            <JFXCheckBox fx:id="checkNightMap" checkedColor="#f77f00" text="Nočná mapa">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="checkHistory" checkedColor="#f77f00" text="Mazanie čiar">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="checkHide" checkedColor="#f77f00" text="Skryť tlačidlá">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="buttons" layoutX="17.0" layoutY="41.0">
+         <children>
+               <JFXButton fx:id="buttonMinebeach" layoutX="628.0" layoutY="580.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonStaraHuta" layoutX="441.0" layoutY="733.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonWesthigh" layoutX="313.0" layoutY="417.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonTerramia" layoutX="242.0" layoutY="299.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonLemnos" layoutY="245.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonSihla" layoutX="238.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonDosadnikovo" layoutX="586.0" layoutY="516.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+               <JFXButton fx:id="buttonIranium" layoutX="723.0" layoutY="437.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+                  <font>
+                     <Font name="Century" size="1.0" />
+                  </font>
+               </JFXButton>
+            <JFXButton fx:id="buttonRunina" layoutX="242.0" layoutY="616.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text=" ">
+               <font>
+                  <Font name="Century" size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

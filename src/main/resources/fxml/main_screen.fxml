@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pozadie" prefHeight="1000.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.worwafi.Controller">
+   <children>
+      <JFXTextArea editable="false" focusColor="#eeeeee" layoutX="14.0" layoutY="31.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="64.0" prefWidth="508.0" promptText="Vitajte" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text="Ahoj! Aký podprogram by si si prial použiť?" unFocusColor="#003049">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXTextArea>
+      <JFXButton fx:id="buttonLetiskovyVypravca" layoutX="14.0" layoutY="116.0" prefHeight="64.0" prefWidth="265.0" style="-fx-background-color: #003049; -fx-text-fill: #f77f00; -fx-border-color: #f77f00;" text="Letiskový výpravca">
+         <font>
+            <Font name="Century" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
